@@ -1,0 +1,36 @@
+{
+  "name": "requirejs-react-hotload",
+  "version": "0.0.0",
+  "description": "Requirejs React hot reloader",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "npm run lint && mocha",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter dot",
+    "travis": "npm run lint && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Munter/requiejs-react-hotload.git"
+  },
+  "keywords": [
+    "requirejs",
+    "require",
+    "react",
+    "hot",
+    "hotload",
+    "reload",
+    "livereload"
+  ],
+  "author": "Peter Müller <munter@fumle.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munter/requiejs-react-hotload/issues"
+  },
+  "homepage": "https://github.com/Munter/requiejs-react-hotload",
+  "devDependencies": {
+    "jshint": "^2.6.3",
+    "mocha": "^2.2.1",
+    "unexpected": "^6.4.0"
+  }
+}

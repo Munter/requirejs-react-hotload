@@ -20,7 +20,13 @@ define(function (require) {
   'use strict';
 
   var React = require('react');
-  var Incrementor = require('jsx!app');
+  var Incrementor = require('hot!jsx!app.jsx');
+  var hot = require('hot');
 
   React.render(React.createElement(Incrementor), document.body);
+
+  window.bump = function () {
+    hot.reload('jsx!app.jsx');
+  };
+  window.hot = hot;
 });

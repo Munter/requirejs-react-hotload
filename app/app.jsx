@@ -19,7 +19,7 @@ define(function (require) {
     },
 
     render: function () {
-      return <h1>{this.state.count}</h1>
+      return <h1>{this.state.count} bottles of beer on the wall</h1>
     }
   });
 

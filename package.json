@@ -4,7 +4,10 @@
   "description": "Requirejs React hot reloader",
   "main": "lib/index.js",
   "scripts": {
-    "serve": "livestyle -r app",
+    "build": "browserify lib/index.js --standalone rjsPlugin.reactHotLoad > requirejs-react-hotload.js",
+    "watchify": "watchify lib/index.js --standalone rjsPlugin.reactHotLoad -o app/hot.js",
+    "livestyle": "livestyle -r app",
+    "serve": "parallel --ungroup ::: 'npm run watchify' 'npm run livestyle'",
     "lint": "jshint .",
     "test": "npm run lint && mocha",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter dot",
@@ -30,9 +33,12 @@
   },
   "homepage": "https://github.com/Munter/requiejs-react-hotload",
   "devDependencies": {
+    "browserify": "^9.0.3",
     "jshint": "^2.6.3",
     "livestyle": "^1.2.2",
     "mocha": "^2.2.1",
-    "unexpected": "^6.4.0"
+    "react": "^0.13.1",
+    "unexpected": "^6.4.0",
+    "watchify": "^2.6.2"
   }
 }

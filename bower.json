@@ -1,0 +1,36 @@
+{
+  "name": "requirejs-react-hotload",
+  "authors": [
+    "Peter Müller <munter@fumle.dk>"
+  ],
+  "main": "requirejs-react-hotload.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "requirejs",
+    "reqiore",
+    "plugin",
+    "react",
+    "hot",
+    "load",
+    "hotload",
+    "reload",
+    "livereload"
+  ],
+  "license": "MIT",
+  "homepage": "https://githuv.com/Munter/requirejs-react-hotload",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "react": "~0.13.1",
+    "requirejs-react-jsx": "~0.13.1",
+    "requirejs": "~2.1.16"
+  }
+}

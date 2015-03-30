@@ -1,5 +1,5 @@
-Episode
-=======
+requirejs-react-hotload
+=======================
 
 [![NPM version](https://badge.fury.io/js/requirejs-react-hotload.svg)](http://badge.fury.io/js/requirejs-react-hotload)
 [![Build Status](https://travis-ci.org/Munter/requirejs-react-hotload.svg?branch=master)](https://travis-ci.org/Munter/requirejs-react-hotload)
@@ -7,6 +7,12 @@ Episode
 [![Dependency Status](https://david-dm.org/Munter/requirejs-react-hotload.svg)](https://david-dm.org/Munter/requirejs-react-hotload)
 
 A [RequireJS](http://requirejs.org/) plugin for hot loading [React](https://facebook.github.io/react/) components.
+
+# PROJECT STATUS: NOT WORKING... YET
+
+## Help Appreciated, get in touch
+
+
 
 Installation
 ------------
